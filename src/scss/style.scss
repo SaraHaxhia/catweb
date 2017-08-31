@@ -1,0 +1,136 @@
+/*!
+ * Bootstrap v4.0.0-beta (https://getbootstrap.com)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "print";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "utilities";
+
+body {
+	background: #F5F5DC;
+}
+
+.navbar {
+	border-bottom-width: 10px;
+	border-bottom-color: black; 
+	background: white;
+	opacity: 0.8;
+}
+
+
+
+.card { 
+	padding: 20px;
+	border-radius: 0px;
+	h4, p {
+		text-align: center;
+	}
+	.btn {
+		display: block;
+		text-align: center;
+		background-color: #F5F5DC;
+		color: black;
+		border: 1px black solid;
+	}
+	border: 0px solid;
+	
+}
+
+.container-border {
+	padding: 0;
+}
+
+.liked {
+	background-color: #00008B;
+	margin: 30px 0 30px 0;
+	padding: 30px;
+	
+	.card { 
+		padding: 0px;
+		
+	}
+	h2 {
+		text-align: center;
+		color: white;
+		padding: 30px;
+
+	}
+	.card img{
+		max-height: 100%;
+		max-width: 100%;
+		
+		
+		
+	}
+
+}
+
+.section1, .section3 {
+	margin-top: 20px;
+	
+	
+}
+
+@media screen and (min-width: 800px) {
+	.section1, .liked, .section3 {
+		box-shadow: 10px 10px 5px grey;
+	}
+}
+
+
+
+
+
+
+.section4 {
+	padding: 40px;
+	background-color:#00008B;
+	margin-top: 20px;
+}
+
+
+.amformedium {
+	display: none;
+}
+
+.amforlarge {display: block;}
+
+@media screen and (max-width: 650px) {
+	.amformedium {display: block;}
+	.amforlarge{display: none;}
+}
+
